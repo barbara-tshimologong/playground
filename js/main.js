@@ -1,124 +1,61 @@
+//by specifying 'use strict',  
+//you will be forced to declare all variables.
+//keywords can't be used as variable names
+//you can't delete a variable or function.
+//ignored by older browsers
+//you should always use this.
+'use strict';
 
-const simpleSwitchBtn = document.getElementById('simple-switch-btn');
-simpleSwitchBtn.addEventListener('click', simpleSwitch);
+//Ternary Operator
+//----------------
 
-function simpleSwitch() {
+const ternaryBtn = document.getElementById('ternary-btn');
+ternaryBtn.addEventListener('click',ternaryfn);
 
-    const product = {
-        id: 5,
-        colour: 'yellow and green',
-        detail: function () {
-            return `Product Details are  ${this.id} , ${this.colour}`;
-        }
-    };
+function ternaryfn(){
+    console.log('1'== 1 ?'equal':'not equal');
+
+    console.log('1'===1?'equal':'not equal');
+
+}
+
+//Comparison
+//----------
+
+const comparisonBtn = document.getElementById('comparison-btn');
+comparisonBtn.addEventListener('click',comparisons);
+
+function comparisons() {
+    let leftSide = 'a';
+    let rightSide = 'b';
     
+    let result = leftSide > rightSide;
 
-    switch (product.id) {
-        case 1:
-            console.log("Product 1");
-            break;
-        case 2:
-            console.log("Product 2");
-            break;
-        default:
-            console.log(product.detail());
-            break;
-    }
+    console.log(result);
 }
 
 
-//------------------------------------------------------------------------------------
+//Plus Sign
+//---------
 
-/* const complexSwitchBtn = document.getElementById('complex-switch-btn');
-const forInBtn = document.getElementById('for-in-btn');
-const forOfBtn = document.getElementById('for-of-btn'); */
+const plusSignBtn = document.getElementById('plus-sign-btn');
+plusSignBtn.addEventListener('click', plusSign);
 
+function plusSign() {
+    //numbers(addition)
+    let result = 1 + 1;
+    console.log('Using the plus sign to add to numbers:' + result);
 
-/* complexSwitchBtn.addEventListener('click', complexSwitch);
-forInBtn.addEventListener('click', forIn);
-forOfBtn.addEventListener('click', forOf);
-foreachBtn.addEventListener('click', forEach); */
+    //strings (concatenation)
+    result = 'a' + 'b';
+    console.log('Using the plus sign to concatenate strings: ' + result);
 
+    //strings and numbers (concatenation)
+    result = 1 + '1' + 'one';
+    console.log('Using the plus sign to concatenate strings and numbers: ' + result);
 
-/* function complexSwitch() {
+    //converting the string to a number and then adding
+    result = 1 + +('1');
+    console.log('Using the plus sign to add strings(converted to number) and numbers: ' + result);
 
-    switch (product.colour) {
-        case "Red":
-        case "Pink":
-            console.log("Reds");
-            break;
-
-        case "Blue":
-        case "Light Blue":
-        case "Dark Blue":
-            console.log("Blues");
-            break;
-
-        case 'Grey':
-        case 'Gray':
-            console.log("Greys");
-
-        default:
-            console.log("Not a known colour!!");
-
-    }
-} */
-
-//for/in statement 
-//iterates through the elements of an object (properties and methods)
-//returns the key(name) of the property or object
-//you can then fetch the object using the key
-
-
-/* function forIn() {
-
-    const product = {
-        id: 5,
-        colour: 'yellow and green',
-        detail: function () {
-            return `Product Details are  ${this.id} , ${this.colour}`;
-        }
-    };
-
-    for (const key in product) {
-        console.log(product[key])
-    }
-} */
-
-//for/of statement 
-//iterates through the elements of an object (properties and methods)
-//returns the object
-//you can then fetch the object using the key
-
-/* function forOf() {
-
-    let productName = 'the best  product';
-
-    let repeatName = '';
-
-    for (const char of productName) {
-        repeatName += char;
-    }
-    console.log(repeatName.toUpperCase());
-
-    let productNameArray = [];
-
-    for (const char of productName) {
-        productNameArray.push(char);
-
-    }
-
-} */
-
-/* function forEach() {
-
-    let arrayRepeat = '';
-    productNameArray.forEach(char => {
-
-        arrayRepeat += char;
-
-        console.log(arrayRepeat);
-    });
-
-
-} */
+}
