@@ -1,7 +1,5 @@
-'use strict';
+'use strict'
 
-// 1.  Switches
-//---------------------------------------------------------------------------
 
 const simpleSwitchBtn = document.getElementById('simple-switch-btn').addEventListener('click',simpleSwitch);
 

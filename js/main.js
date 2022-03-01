@@ -4,7 +4,7 @@
 //you can't delete a variable or function.
 //ignored by older browsers
 //you should always use this.
-'use strict';
+'use strict'
 
 //Ternary Operator
 //----------------

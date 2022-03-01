@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 //-------------------------------------------------------------------------------------
 //LOOP THROUGH OBJECTS
 //-------------------------------------------------------------------------------------
@@ -7,9 +7,6 @@
 //iterates through the elements of an OBJECT(properties and methods)
 //returns the key(name) of the item
 //you can then fetch the item using it's key
-
-
-
 
 const forInBtn = document.getElementById('for-in-btn');
 forInBtn.addEventListener('click', forIn);
