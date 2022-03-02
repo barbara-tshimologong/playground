@@ -1,5 +1,4 @@
-'use strictly'
-
+'use strict';
 
 //Reference Error - 'x' is not defined.
 //-------------------------------------

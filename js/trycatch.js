@@ -1,3 +1,5 @@
+'use strict';
+
 const tryCatchbtn = document.getElementById('try-catch-btn');
 //tryCatchbtn.addEventListener('click', tryCatch);
 tryCatchbtn.addEventListener('click',tryCatchFinally);

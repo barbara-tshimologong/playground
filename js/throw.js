@@ -1,4 +1,4 @@
-'use strictly'
+'use strict';
 
 const throwBtn = document.getElementById('throw-btn');
 

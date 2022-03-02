@@ -1,4 +1,4 @@
-'use strictly'
+'use strict';
 
 //The Spread Operator:
 //Expands any iterable (string or array) into an array

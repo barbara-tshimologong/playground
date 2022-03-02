@@ -1,4 +1,4 @@
-'use strictly'
+'use strict';
 
 const dataTypeBtn = document.getElementById('data-type-btn');
 

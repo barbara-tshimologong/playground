@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 
 const simpleSwitchBtn = document.getElementById('simple-switch-btn').addEventListener('click',simpleSwitch);

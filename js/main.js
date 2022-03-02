@@ -1,10 +1,10 @@
-//by specifying 'use strict',  
-//you will be forced to declare all variables.
-//keywords can't be used as variable names
-//you can't delete a variable or function.
-//ignored by older browsers
-//you should always use this.
-'use strict'
+//by specifying 'use strict':
+//*-you will be forced to declare all variables.
+//*-keywords can't be used as variable names
+//*-you can't delete a variable or function.
+//*-ignored by older browsers
+//*-you should always use this.
+'use strict';
 
 //Ternary Operator
 //----------------
