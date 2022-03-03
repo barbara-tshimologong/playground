@@ -59,3 +59,19 @@ function plusSign() {
     console.log('Using the plus sign to add strings(converted to number) and numbers: ' + result);
 
 }
+//this
+//-----
+const thisObjectLiteralBtn = document.getElementById('this-object-literal-btn');
+thisObjectLiteralBtn.addEventListener('click',thisObjectLiteral);
+
+function thisObjectLiteral(){
+
+    let product = {
+        'productId':5,
+        'productName':'Bicycle',
+        'fullDescription': function () {
+            return (`${this.productName}  ${this.productId}`);}
+        }
+
+        console.log(product.fullDescription());
+}

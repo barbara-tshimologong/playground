@@ -1,83 +1,114 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Factory Playground</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Fira+Sans:wght@600;800&display=swap" rel="stylesheet">
+  <title>App Factory JavaScript Playground</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
+  <header>
 
-    <header>
-        <nav>
+    <nav >
+    
+        <a class="navbar-brand" href="#"><img src="./img/App Factory.svg"></a>
 
-        </nav>
-    </header>
+    </nav>
+  </header>
 
-    <section class="button-group">
+  <section>
 
-        <button id="simple-switch-btn">Simple Switch Sample</button>
-        
-        <button id="complex-switch-btn">Complex Switch Sample</button>
+    <h1>The App Factory JavaScript Playground</h1>
 
-        <button id="for-in-btn">For/in Sample</button>
+      <h2>Switches</h2>
+    <div class="btn-group">
+      
+      <button type="button"  class="btn" id="simple-switch-btn">Simple Switch</button>
 
-        <button id="for-of-btn">For/of Sample</button>
+      <button type="button"  class="btn" id="complex-switch-btn">Complex Switch</button>
 
-        <button id="foreach-btn">Foreach Sample</button>
+    </div>
 
-        <button id="plus-sign-btn">Plus Sign Sample</button>
+    <h2>Iterating</h2>
+    <div class="btn-group">
 
-        <button id="comparison-btn">Comparison Sample</button>
+      <button type="button" class="btn" id="for-in-btn">For/in</button>
 
-        <button id="ternary-btn">Ternary Sample</button>
+      <button type="button" class="btn" id="for-of-btn">For/of</button>
 
-        <button id="splice-btn">Splice Sample</button>
+      <button type="button" class="btn" id="foreach-btn">Foreach</button>
+    </div>
 
-        <button id="spread-btn">Spread Sample</button>
+    <h2>The &plus; Sign</h2>
+    <div class="btn-group">
+      <button type="button" id="plus-sign-btn" class="btn">The &plus; Sign</button>
+    </div>
 
-        <button id="instantiate-btn">Instantiate Sample</button>
+    <h2>Comparisons</h2>
+    <div class="btn-group">
 
-    </section>
+      <button type="button" class="btn" id="comparison-btn">Comparison</button>
 
-    <section class="button-group">
-        <button id="try-catch-btn">Try, Catch, Finally Sample</button>
+      <button type="button" class="btn"id="ternary-btn">The &quest; Ternary Operator</button>
 
-        <button id="throw-btn">Throw Sample</button>
+    </div>
 
-        <button id="ref-error-btn">Reference Handling Sample</button>
+    <h2>Arrays</h2>
+    <div class="btn-group">
+      <button type="button" class="btn" id="splice-btn">Splice</button>
+    </div>
 
-        <button id="range-error-btn">Range Error Handling Sample</button>
+    <h2>Spread</h2>
+    <div class="btn-group">
+      <button type="button" class="btn" id="spread-btn">Spread</button>
+    </div>
 
-        <button id="type-error-btn">Type Error Handling Sample</button>
+    <h2>Data Types</h2>
+    <div class="btn-group">
+      <button type="button" class="btn" id="data-type-btn">Data Types</button>
+    </div>
+      
+    <h2>Error Handling</h2>
+    <div>
+      <button type="button" class="btn" id="try-catch-btn">Try, Catch, Finally</button>
 
-        <button id="uri-error-btn">URI Error Handling Sample</button>
+      <button type="button" class="btn" id="throw-btn">Throw</button>
 
-        <button id="syntax-error-btn">Syntax Error Handling Sample</button>
+      <button type="button" class="btn" id="ref-error-btn">Reference Handling</button>
 
-    </section>
+      <button type="button:" class="btn" id="range-error-btn">Range Error Handling</button>
 
-    <section class="button-group">
-        <button id="data-type-btn">Data Type Sample</button>
-    </section>
+      <button type id="type-error-btn">Type Error Handling</button>
 
-    <section class="button-group">
-        <button id="this-event-btn" onclick="eventHandler(this)">This Event Sample</button>
-        <button id="this-object-literal-btn">This Object Literal Sample</button>
-    </section>
+      <button id="uri-error-btn">URI Error Handling</button>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/switch.js"></script>
-    <script src="./js/object.js"></script>
-    <script src="./js/array.js"></script>
-    <script src="./js/trycatch.js"></script>
-    <script src="./js/throw.js"></script>
-    <script src="./js/errorhandling.js"></script>
-    <script src="./js/datatypes.js"></script>
-    <script src="./js/this.js"></script>
-    <script src="./js/spread.js"></script>
-    <script src="./js/Instatiation.js"></script>
+      <button id="syntax-error-btn">Syntax Error Handling</button>
+    </div>
+ 
+    <h2>this</h2>
+    <div>
+      <button id="this-object-literal-btn">this Object Literal</button>
+    </div>
+    </div>
+  </section>
+  
+  <script src="./js/app.js"></script>
+  <script src="./js/switch.js"></script>
+  <script src="./js/object.js"></script>
+  <script src="./js/array.js"></script>
+  <script src="./js/trycatch.js"></script>
+  <script src="./js/throw.js"></script>
+  <script src="./js/errorhandling.js"></script>
+  <script src="./js/datatypes.js"></script>
+  <script src="./js/spread.js"></script>
+ 
 
 </body>
+
 </html>

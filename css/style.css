@@ -1,0 +1,56 @@
+/* Fonts 
+--------
+font-family: 'Fira Code', monospace;
+font-family: 'Fira Sans', sans-serif;
+*/
+
+html {
+    box-sizing: border-box;
+     margin:0;
+     padding:0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: rgba(255, 255, 0,0.3);
+  }
+
+  h1{
+    font-family: 'Fira Code', monospace;
+    text-align: center;
+  }
+
+  h2{
+    font-family: 'Fira Code', monospace;
+  }
+
+  nav {
+    background-color: rgba(0, 128, 0,0.3
+    );
+  }
+  nav img {
+    height: 80px;
+    width: 80px;
+  }
+
+.btn-group {
+    border-color:red;
+    border-width:10px;
+    border-style:single;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    margin-bottom: 0.5%;
+}
+
+.btn{
+  background-color:#d8d9db;
+  color:black;
+  border: none;
+  font-size: 40px;
+  height: 100px;
+  flex-basis: 24.5%;
+}
+

@@ -2,7 +2,6 @@
 
 //ARRAYS
 
-//
 //forEach statement 
 //iterates through the items in an ARRAY 
 
@@ -22,9 +21,9 @@ function forEach() {
 
 }
 
-//-------------------------------------------
-//Splice to add items at specified indexes.
-//------------------------------------------
+//----------------------------------------------------
+//Splice to add items at specified indexes in an array
+//----------------------------------------------------
 
 const spliceBtn = document.getElementById('splice-btn');
 spliceBtn.addEventListener('click',splicefn);
